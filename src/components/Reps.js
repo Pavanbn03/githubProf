@@ -10,14 +10,14 @@ export default class Reps extends Component {
         }
     }
     componentDidMount(){
-        axios.get('https://api.github.com/users/anilbg189/repos')
+        axios.get('https://api.github.com/users/Pavanbn03/repos')
         .then(res=>{
             this.setState({data:res.data})
             //console.log(this.state.data);
             
         })
         .then(()=>{
-            axios.get('https://api.github.com/users/anilbg189').then(resp=>{
+            axios.get('https://api.github.com/users/Pavanbn03').then(resp=>{
                 this.setState({profile:resp.data})
             })
         }
